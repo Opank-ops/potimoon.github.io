@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Potimoon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #2E8B57;
+            --secondary-color: #F0FFF0;
+            --text-color: #333333;
+            --white-color: #FFFFFF;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.7; color: var(--text-color); background-color: var(--white-color); }
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; overflow: hidden; }
+        section { padding: 80px 0; }
+        h2 { text-align: center; font-size: 2.5rem; font-weight: 700; margin-bottom: 40px; color: var(--primary-color); }
+        .navbar { background-color: var(--white-color); padding: 0.5rem 0; position: sticky; top: 0; width: 100%; z-index: 1000; box-shadow: var(--shadow); }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .navbar .logo-link { display: flex; align-items: center; text-decoration: none; }
+        .navbar .logo-img { 
+            height: 100px;
+            width: auto;
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+        .nav-links { list-style: none; display: flex; }
+        .nav-links li a { padding: 0 15px; text-decoration: none; color: var(--text-color); font-weight: 600; transition: color 0.3s ease; }
+        .nav-links li a:hover { color: var(--primary-color); }
+        .hamburger-menu { display: none; cursor: pointer; }
+        .hamburger-menu div { width: 25px; height: 3px; background-color: var(--text-color); margin: 5px 0; transition: 0.4s; }
+        #tentang { background-color: var(--secondary-color); }
+        .about-content { max-width: 800px; margin: 0 auto 60px auto; text-align: center; font-size: 1.1rem; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; justify-items: center; }
+        
+        .team-member-link { text-decoration: none; color: inherit; }
+
+        .team-member { background-color: var(--white-color); text-align: center; padding: 20px; border-radius: 15px; box-shadow: var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; }
+        .team-member:hover { transform: translateY(-10px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+        .team-member img { width: 160px; height: 160px; border-radius: 15px; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--secondary-color); }
+        .team-member h4 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 5px; }
+        .team-member p { font-size: 0.9rem; color: #666; }
+        #kontak { background-color: var(--white-color); }
+        .contact-content { max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; }
+        .contact-content p { margin: 15px 0; }
+        .contact-content strong { color: var(--primary-color); }
+        footer { background-color: #333; color: var(--white-color); text-align: center; padding: 25px 0; }
+        @media (max-width: 768px) {
+            .nav-links { position: absolute; right: 0px; top: 80px; background-color: var(--white-color); display: none; flex-direction: column; align-items: center; width: 100%; box-shadow: var(--shadow); }
+            .nav-links.nav-active { display: flex; }
+            .nav-links li { margin: 15px 0; }
+            .hamburger-menu { display: block; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo-potimoon.png" alt="Logo Potimoon" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produk">Produk</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="tentang">
+        <div class="container">
+            <h2>Cerita Di Balik Potimoon Juice</h2>
+            <div class="about-content">
+                <p>Kami adalah sekelompok anak muda yang percaya bahwa kesehatan dimulai dari apa yang kita konsumsi. Berawal dari dapur rumah, kami bertekad untuk menyajikan jus paling segar dan alami langsung ke tangan Anda. Setiap botol dibuat dengan cinta dan bahan-bahan berkualitas tinggi dari petani lokal.</p>
+            </div>
+            
+            <h2>Tim Kami</h2>
+            <div class="team-grid">
+                <a href="anggota1.html" class="team-member-link">
+                    <div class="team-member">
+                        <img src="https://placehold.co/200x200/2E8B57/white?text=Foto" alt="Foto Anggota Tim 1">
+                        <h4>Nama Anggota 1</h4>
+                        <p>Founder</p>
+                    </div>
+                </a>
+                <a href="anggota2.html" class="team-member-link">
+                    <div class="team-member">
+                        <img src="https://placehold.co/200x200/2E8B57/white?text=Foto" alt="Foto Anggota Tim 2">
+                        <h4>Nama Anggota 2</h4>
+                        <p>Desainer</p>
+                    </div>
+                </a>
+                <a href="anggota3.html" class="team-member-link">
+                    <div class="team-member">
+                        <img src="https://placehold.co/200x200/2E8B57/white?text=Foto" alt="Foto Anggota Tim 3">
+                        <h4>Nama Anggota 3</h4>
+                        <p>Pemasaran Online</p>
+                    </div>
+                </a>
+                 <a href="anggota4.html" class="team-member-link">
+                    <div class="team-member">
+                        <img src="https://placehold.co/200x200/2E8B57/white?text=Foto" alt="Foto Anggota Tim 4">
+                        <h4>Nama Anggota 4</h4>
+                        <p>Pemasaran Offline</p>
+                    </div>
+                </a>
+                 <a href="anggota5.html" class="team-member-link">
+                    <div class="team-member">
+                        <img src="https://placehold.co/200x200/2E8B57/white?text=Foto" alt="Foto Anggota Tim 5">
+                        <h4>Nama Anggota 5</h4>
+                        <p>Pemasaran Offline</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="kontak">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-content">
+                <p>Siap merasakan kesegarannya? Jangan ragu untuk menghubungi kami!</p>
+                <p><strong>WhatsApp:</strong> 087755104177</p>
+                <p><strong>Instagram:</strong> @PotimoonJuiceID</p>
+                <p><strong>Lokasi:</strong> Banjarnegara, Jawa Tengah</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Potimoon Juice. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+        });
+    </script>
+
+</body>
+</html>
+
